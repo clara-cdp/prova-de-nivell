@@ -1,5 +1,7 @@
 <?php
 
+
+
 enum SubGenre: string
 {
     case classic = 'classic';
@@ -10,7 +12,6 @@ enum SubGenre: string
 
 class Play
 {
-
     public string $title;
     public int $runtime;
     public int $numberOdSongs;
@@ -26,15 +27,7 @@ class Play
         $this->subGenre = $subGenre;
     }
 
-    public function getRuntime()
-    {
-        return $this->runtime;
-    }
 
-    public function getSubGenre()
-    {
-        return $this->subGenre->value;
-    }
 
 
     public function __toString()
